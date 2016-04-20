@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ChildSecure</string>
+    <string name="hello_world">Hello world!</string>
+	<!-- 标题栏的名字设置 -->  
+    <string name="fragment_one_title">会话</string>
+    <string name="fragment_two_title">联系人</string>
+    <string name="fragment_three_title">分享</string>
+    <string name="fragment_four_title">设置</string>
+
+    <string name="tab_1">&#xe601;</string>
+    <string name="tab_2">&#xe602;</string>
+    <string name="tab_3">&#xe600;</string>
+    <string name="tab_4">&#xe603;</string>
+</resources>
