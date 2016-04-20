@@ -1,0 +1,5 @@
+bin/*
+# mac
+.DS_Store
+R.java
+*.swp
