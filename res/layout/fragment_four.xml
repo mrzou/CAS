@@ -7,5 +7,19 @@
     <TextView 
         style="@style/TitleStyle"
         android:text="@string/fragment_four_title"/>
+    <TextView 
+        android:text="hello world"
+        android:layout_width="120dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="10dp"/>
+    
+    <Button 
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
 
 </LinearLayout>

@@ -7,7 +7,7 @@
     <color name="tab_middle_line_color">#5c882c</color>
     <color name="red_black">#400000</color>
     <color name="little_green">#336633</color>
-    <!-- 扫描使用的color -->
+    
     <color name="result_view">#b0000000</color>
     <color name="viewfinder_mask">#60000000</color>
     <color name="possible_result_points">#c0ffff00</color> 
