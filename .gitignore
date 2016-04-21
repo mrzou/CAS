@@ -4,3 +4,4 @@ bin/*
 R.java
 *.swp
 gen/*
+*/.DS_Store
