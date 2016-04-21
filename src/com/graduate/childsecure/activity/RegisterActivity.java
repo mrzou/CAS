@@ -1,6 +1,7 @@
-package com.graduate_design.childsecureproject;
+package com.graduate.childsecure.activity;
 
-import com.graduate_design.childsecure.bean.User;
+import com.graduate.childsecure.bean.User;
+import com.graduate_design.childsecureproject.R;
 
 import cn.bmob.im.util.BmobLog;
 import cn.bmob.v3.BmobInstallation;

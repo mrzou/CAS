@@ -1,8 +1,8 @@
-package com.graduate_design.childsecureproject.fragment;
+package com.graduate.childsecure.fragment;
 
 import cn.bmob.v3.BmobUser;
 
-import com.graduate_design.childsecureproject.LoginActivity;
+import com.graduate.childsecure.activity.LoginActivity;
 import com.graduate_design.childsecureproject.R;
 import android.content.Context;
 import android.content.Intent;

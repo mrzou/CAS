@@ -1,13 +1,14 @@
-package com.graduate_design.childsecureproject;
+package com.graduate.childsecure.activity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.graduate_design.childsecureproject.adapter.CustomeFragmentPagerAdapter;
-import com.graduate_design.childsecureproject.fragment.FourFragment;
-import com.graduate_design.childsecureproject.fragment.OneFragment;
-import com.graduate_design.childsecureproject.fragment.ThreeFragment;
-import com.graduate_design.childsecureproject.fragment.TwoFragmnet;
+import com.graduate.childsecure.adapter.CustomeFragmentPagerAdapter;
+import com.graduate.childsecure.fragment.FourFragment;
+import com.graduate.childsecure.fragment.OneFragment;
+import com.graduate.childsecure.fragment.ThreeFragment;
+import com.graduate.childsecure.fragment.TwoFragmnet;
+import com.graduate_design.childsecureproject.R;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -85,7 +86,7 @@ public class MainActivity extends FragmentActivity{
 		fragments.add(new TwoFragmnet());
 		fragments.add(new ThreeFragment());
 		fragments.add(new FourFragment());
-		//容器
+		//划动页面容器
 		viewPager.setAdapter(new CustomeFragmentPagerAdapter(getSupportFragmentManager(), fragments));
 		viewPager.setCurrentItem(page);
 		viewPager.setOnPageChangeListener(new MyOnPageChangeListener()); //监听viewpager切换事件

@@ -1,4 +1,4 @@
-package com.graduate_design.childsecureproject.fragment;
+package com.graduate.childsecure.fragment;
 
 import com.graduate_design.childsecureproject.R;
 

@@ -1,4 +1,4 @@
-package com.graduate_design.childsecureproject.adapter;
+package com.graduate.childsecure.adapter;
 
 import java.util.List;
 

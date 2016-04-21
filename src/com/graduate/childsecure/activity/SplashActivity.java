@@ -1,4 +1,6 @@
-package com.graduate_design.childsecureproject;
+package com.graduate.childsecure.activity;
+
+import com.graduate_design.childsecureproject.R;
 
 import cn.bmob.im.BmobChat;
 import android.annotation.SuppressLint;

@@ -1,12 +1,15 @@
-package com.graduate_design.childsecureproject;
+package com.graduate.childsecure.activity;
 
-import com.graduate_design.childsecure.bean.User;
+import com.graduate.childsecure.bean.User;
+import com.graduate.childsecure.util.CustomProgress;
+import com.graduate_design.childsecureproject.R;
 
 import cn.bmob.im.util.BmobLog;
 import cn.bmob.v3.listener.SaveListener;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -23,10 +26,12 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 	private EditText userName, password;
 	private TextView signUp;
 	private Button btn_login;
+	private Context context;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
+		context = this;
 		init();
 	}
 	// 初始化按钮事件
@@ -66,9 +71,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 
 		final ProgressDialog progress = new ProgressDialog(
 				LoginActivity.this);
-		progress.setMessage("正在登陆...");
-		progress.setCanceledOnTouchOutside(false);
-		progress.show();
+		CustomProgress.show(this, "登录中...", true, null);
 		User user = new User();
 		user.setUsername(name);
 		user.setPassword(passw);
@@ -83,7 +86,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 					public void run() {
 						Log.v("TAG", "on success");
 						// TODO Auto-generated method stub
-						progress.setMessage("正在获取好友列表...");
+						// CustomProgress.show(context, "登录中...", true, null);
 					}
 				});
 				//更新用户的地理位置以及好友的资料

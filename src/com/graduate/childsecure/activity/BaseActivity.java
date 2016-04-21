@@ -1,4 +1,4 @@
-package com.graduate_design.childsecureproject;
+package com.graduate.childsecure.activity;
 
 import cn.bmob.im.BmobUserManager;
 import android.app.Activity;

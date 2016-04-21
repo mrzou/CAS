@@ -1,4 +1,4 @@
-package com.graduate_design.childsecure.bean;
+package com.graduate.childsecure.bean;
 
 import cn.bmob.im.bean.BmobChatUser;
 import cn.bmob.v3.datatype.BmobGeoPoint;
