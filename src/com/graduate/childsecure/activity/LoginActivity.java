@@ -2,12 +2,14 @@ package com.graduate.childsecure.activity;
 
 import com.graduate.childsecure.bean.User;
 import com.graduate.childsecure.util.CustomProgress;
+import com.graduate.childsecure.util.ToastUtil;
 import com.graduate_design.childsecureproject.R;
 
 import cn.bmob.im.util.BmobLog;
 import cn.bmob.v3.listener.SaveListener;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -59,7 +61,9 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 	public void userLogin(){
 		String name = userName.getText().toString();
 		String passw = Base64.encodeToString(password.getText().toString().getBytes(), Base64.DEFAULT);
-
+		
+		
+		ToastUtil.showToast(passw, 2);
 		if (TextUtils.isEmpty(name)) {
 			Toast.makeText(getApplicationContext(), "请输入用户名", Toast.LENGTH_LONG).show();
 			return;
@@ -70,8 +74,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 			return;
 		}
 
-		final ProgressDialog progress = new ProgressDialog(
-				LoginActivity.this);
 		CustomProgress.show(this, "登录中...", true, null);
 		User user = new User();
 		user.setUsername(name);
@@ -86,12 +88,10 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 					@Override
 					public void run() {
 						Log.v("TAG", "on success");
-						// TODO Auto-generated method stub
-						// CustomProgress.show(context, "登录中...", true, null);
 					}
 				});
 				//更新用户的地理位置以及好友的资料
-				progress.dismiss();
+				CustomProgress.hideDialog();
 				Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 				startActivity(intent);
 				finish();
@@ -100,9 +100,8 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 			@Override
 			public void onFailure(int errorcode, String arg0) {
 				// TODO Auto-generated method stub
-				progress.dismiss();
-				BmobLog.i(arg0);
-				Toast.makeText(getApplicationContext(), "登录失败!", Toast.LENGTH_LONG).show();
+				ToastUtil.showToast("用户名或密码错误!", 2);
+				CustomProgress.hideDialog();
 			}
 		});
 	}

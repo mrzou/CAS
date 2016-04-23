@@ -10,10 +10,10 @@
     <string name="fragment_four_title">设置</string>
     <string name="userAccount">帐号:</string>
     <string name="userPassword">密码:</string>
-    <string name="tab_1">&#xe601;</string>
-    <string name="tab_2">&#xe602;</string>
-    <string name="tab_3">&#xe600;</string>
-    <string name="tab_4">&#xe603;</string>
+    <string name="tab_1">&#xe604;</string>
+    <string name="tab_2">&#xe603;</string>
+    <string name="tab_3">&#xe602;</string>
+    <string name="tab_4">&#xe601;</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_base">BaseActivity</string>
     <string name="title_activity_register">RegisterActivity</string>

@@ -53,13 +53,13 @@ public class MainActivity extends FragmentActivity{
 	private void InitTextView() {
 		
 		makeMenuOfBottom(R.id.linearLayout1, "会话", 0);
-		makeMenuOfBottom(R.id.linearLayout2, "联系人", 1);
+		makeMenuOfBottom(R.id.linearLayout2, "位置", 1);
 		makeMenuOfBottom(R.id.linearLayout3, "分享", 2);
 		makeMenuOfBottom(R.id.linearLayout4, "设置", 3);
 	}
 	//对应设置图标颜色和监听事件
 	private void makeMenuOfBottom(int linearLayoutId, String text, int index){
-		Typeface iconfont = Typeface.createFromAsset(getAssets(), "iconfont.ttf");
+		Typeface iconfont = Typeface.createFromAsset(getAssets(), "mainbar.ttf");
 		
 		LinearLayout linearLayout = (LinearLayout) findViewById(linearLayoutId);
 		//分别设置对应图标的监听事件

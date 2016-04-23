@@ -62,8 +62,8 @@ public class RegisterActivity extends BaseActivity implements OnClickListener{
 		if (view == btn_register) {
 			valifySignUp();
 		} else {
-			if (TextUtils.isEmpty(phoneNumber.toString())) {
-				Toast.makeText(getApplicationContext(), "请输入手机号码", Toast.LENGTH_LONG).show();
+			if (TextUtils.isEmpty(phoneNumber.getText().toString())) {
+				ToastUtil.showToast("请输入手机号码!", 2);
 				return;
 			}
 			validateUniquePhone();
@@ -81,13 +81,13 @@ public class RegisterActivity extends BaseActivity implements OnClickListener{
 		            if(object.size()==0){
 		            	requestValidateCode();
 		            }else{
-		            	ToastUtil.showToast("已存在该手机用户", false);
+		            	ToastUtil.showToast("已存在该手机用户", 2);
 		            }
 		        }
 		        @Override
 		        public void onError(int code, String msg) {
 		            // TODO Auto-generated method stub
-		        	ToastUtil.showToast("查询失败："+msg, false);
+		        	ToastUtil.showToast("查询失败："+msg, 2);
 		        }
 		});
 	}
@@ -95,23 +95,23 @@ public class RegisterActivity extends BaseActivity implements OnClickListener{
 	private void valifySignUp(){
 		String userPass = userPassword.getText().toString();
 		if (TextUtils.isEmpty(userName.getText().toString())) {
-			ToastUtil.showToast("请输入用户名", false);
+			ToastUtil.showToast("请输入用户名", 2);
 			return;
 		}
 		if (TextUtils.isEmpty(userPassword.getText().toString())) {
-			ToastUtil.showToast("请输入密码", false);
+			ToastUtil.showToast("请输入密码", 2);
 			return;
 		}
 		if (TextUtils.isEmpty(phoneNumber.getText().toString())) {
-			ToastUtil.showToast("请输入手机号码", false);
+			ToastUtil.showToast("请输入手机号码", 2);
 			return;
 		}
 		if (!userPass.equals(comfirmPassword.getText().toString()) || userPass.length() < 6 || userPass.length() > 12) {
-			ToastUtil.showToast("请检查密码！", true);
+			ToastUtil.showToast("请检查密码！", 2);
 			return;
 		}
 		if (TextUtils.isEmpty(validateCode.getText().toString())) {
-			ToastUtil.showToast("请输入短信验证吗", true);
+			ToastUtil.showToast("请输入短信验证吗", 2);
 			return;
 		}
 		valifyValidateCode();
@@ -125,7 +125,9 @@ public class RegisterActivity extends BaseActivity implements OnClickListener{
 		    public void done(Integer smsId,BmobException ex) {
 		        // TODO Auto-generated method stub
 		        if(ex==null){//验证码发送成功
-		        	ToastUtil.showToast("验证码发送成功", true);
+		        	ToastUtil.showToast("验证码发送成功", 2);
+		        }else{
+		        	ToastUtil.showToast(ex.toString(), 2);
 		        }
 		    }
 		});

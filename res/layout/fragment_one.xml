@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" 
     android:descendantFocusability="blocksDescendants">"
-
-    <TextView
+    <TextView 
         style="@style/TitleStyle"
         android:text="@string/fragment_one_title"/>
 

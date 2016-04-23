@@ -112,7 +112,6 @@
 		            android:layout_marginTop="-5dp"
 		            android:gravity="center"
 		            android:layout_marginRight="10dip"
-		            android:onClick="sendValidCode"
 		            android:text="获取验证码"/>    
 			</LinearLayout>
 			<Button  
