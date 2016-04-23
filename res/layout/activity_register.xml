@@ -80,7 +80,7 @@
 		  
 		        <EditText  
 		            style="@style/InputStyle"
-		            android:id="@+id/phone_edit"  
+		            android:id="@+id/phoneNumber"  
 		            android:inputType="phone" />  
 			</LinearLayout>
 			<LinearLayout  
@@ -90,12 +90,12 @@
 		        android:layout_marginTop="30dp">
 		  
 		        <TextView  
-		            android:id="@+id/valid_name"  
+		            android:id="@+id/valid_text"  
 		            style="@style/TextStyle"
 		            android:text="验证码:"  />  
 		  
 		        <EditText  
-		            android:id="@+id/valid_edit"  
+		            android:id="@+id/valid_code"  
 		            android:layout_width="0dp"  
 		            android:layout_height="40dip"  
 		            android:layout_weight="1.4"

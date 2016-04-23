@@ -18,6 +18,5 @@ public class BaseActivity extends Activity {
 
 	public void onDetach() {
 		// TODO Auto-generated method stub
-		
 	}
 }

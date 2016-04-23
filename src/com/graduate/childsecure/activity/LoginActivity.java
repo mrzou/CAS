@@ -13,6 +13,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -57,7 +58,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 	
 	public void userLogin(){
 		String name = userName.getText().toString();
-		String passw = password.getText().toString();
+		String passw = Base64.encodeToString(password.getText().toString().getBytes(), Base64.DEFAULT);
 
 		if (TextUtils.isEmpty(name)) {
 			Toast.makeText(getApplicationContext(), "请输入用户名", Toast.LENGTH_LONG).show();
