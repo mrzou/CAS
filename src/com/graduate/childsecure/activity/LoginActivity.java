@@ -60,7 +60,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 	
 	public void userLogin(){
 		String name = userName.getText().toString();
-		String passw = Base64.encodeToString(password.getText().toString().getBytes(), Base64.DEFAULT);
+		String passw = password.getText().toString();
 		
 		
 		ToastUtil.showToast(passw, 2);

@@ -135,7 +135,7 @@ public class RegisterActivity extends BaseActivity implements OnClickListener{
 	
 	private void register(){
 		String name = userName.getText().toString();
-		String password = Base64.encodeToString(userPassword.getText().toString().getBytes(), Base64.DEFAULT);
+		String password = userPassword.getText().toString();
 		
 		final ProgressDialog progress = new ProgressDialog(RegisterActivity.this);
 		progress.setMessage("正在注册...");

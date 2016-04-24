@@ -5,11 +5,19 @@
     <string name="hello_world">Hello world!</string>
     <!-- 标题栏的名字设置 -->
     <string name="fragment_one_title">会话</string>
-    <string name="fragment_two_title">联系人</string>
+    <string name="fragment_two_title">位置</string>
     <string name="fragment_three_title">分享</string>
     <string name="fragment_four_title">设置</string>
     <string name="userAccount">帐号:</string>
     <string name="userPassword">密码:</string>
+    <string name="contact">会话</string>
+    <string name="friends_list_name">好友列表</string>
+    <string name="username">用户名</string>
+    <string name="search">搜索</string>
+    <string name="add_friends">&#xe600;</string>
+    <string name="friends_list">&#xe601;</string>
+    <string name="new_friends">&#xe602;</string>
+    <string name="forward">&#xe603;</string>
     <string name="tab_1">&#xe604;</string>
     <string name="tab_2">&#xe603;</string>
     <string name="tab_3">&#xe602;</string>
@@ -17,7 +25,8 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_base">BaseActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
-    
     <string name="passwor_allert">密码在6到12个字符</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

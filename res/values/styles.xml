@@ -28,7 +28,7 @@
     </style>
     <!-- 主页面的bar小图标样式 -->
     <style name="MainBarImage" parent="@style/MainBar">
-        <item name="android:textSize">25sp</item>
+        <item name="android:textSize">30sp</item>
     </style>
     <!-- 主页面的bar文字样式 -->
     <style name="MainBarLetter" parent="@style/MainBar">
@@ -68,6 +68,20 @@
         <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="ImageView">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <!-- activity_friends.xml/messageItem -->
+    <style name="MessageItem">
+        <item name="android:layout_width">46dp</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">21sp</item>
     </style>
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">

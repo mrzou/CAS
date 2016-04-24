@@ -4,8 +4,46 @@
     android:layout_height="match_parent"
     android:orientation="vertical" 
     android:descendantFocusability="blocksDescendants">"
-    <TextView 
-        style="@style/TitleStyle"
-        android:text="@string/fragment_one_title"/>
+    <LinearLayout 
+	    android:id="@+id/personal_linearlayout0"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+        android:background="@color/title_color"
+	    android:orientation="horizontal">	
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:paddingRight="70dp"
+            android:gravity="right"
+            android:text="@string/contact"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+   		<Button
+   		    android:id="@+id/friends_lists"
+   		    android:layout_width="0dp"
+   		    android:layout_height="fill_parent"
+   		    android:layout_weight="0.11"
+   		    android:paddingRight="1dp"
+   		    android:background="@drawable/friends_list"
+   		    android:gravity="center"
+   		    android:text="@string/friends_list"
+   		    android:textColor="@color/white"
+   		    android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/friendsListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+    </ListView>
+
+"
 
 </LinearLayout>

@@ -14,5 +14,6 @@
     <color name="gray">#CCCCCC</color>
     <color name="lighter_gray">#C0C0C0</color>
     <color name="title_color">#669933</color>
+    <color name="button_press_color">#33FF66</color>
 
 </resources>
